@@ -47,7 +47,7 @@ const Header: React.FC = () => {
 
   return (
     <header className="sticky top-0 left-0 w-full flex items-center z-10 transition-colors bg-black">
-      <div className="container">
+      <div className="w-full">
         <div className="flex items-center justify-between relative">
           <div className="px-4">
             <a
@@ -82,7 +82,7 @@ const Header: React.FC = () => {
                 <li className="group">
                   <a
                     href="#home"
-                    className="text-base text-white py-2 mx-8 flex group-hover:text-blue-400"
+                    className="text-base text-black lg:text-white py-2 mx-8 flex group-hover:text-blue-400"
                   >
                     Home
                   </a>
@@ -90,7 +90,7 @@ const Header: React.FC = () => {
                 <li className="group">
                   <a
                     href="#main"
-                    className="text-base text-white py-2 mx-8 flex group-hover:text-blue-400 dark:text-white"
+                    className="text-base text-black lg:text-white py-2 mx-8 flex group-hover:text-blue-400 dark text-black:lg:text-white"
                   >
                     Class
                   </a>
@@ -98,7 +98,7 @@ const Header: React.FC = () => {
                 <li className="group">
                   <a
                     href="#structure"
-                    className="text-base text-white py-2 mx-8 flex group-hover:text-blue-400 dark:text-white"
+                    className="text-base text-black lg:text-white py-2 mx-8 flex group-hover:text-blue-400 dark text-black:lg:text-white"
                   >
                     Structure
                   </a>
@@ -106,7 +106,7 @@ const Header: React.FC = () => {
                 <li className="group">
                   <a
                     href="#member"
-                    className="text-base text-white py-2 mx-8 flex group-hover:text-blue-400 dark:text-white"
+                    className="text-base text-black lg:text-white py-2 mx-8 flex group-hover:text-blue-400 dark text-black:lg:text-white"
                   >
                     Member
                   </a>
@@ -114,7 +114,7 @@ const Header: React.FC = () => {
                 {/* <li className="group">
                   <button
                     onClick={toggleDarkMode}
-                    className="px-4 py-2 bg-blue-500 text-white rounded-md hover:bg-blue-600"
+                    className="px-4 py-2 bg-blue-500 text-black lg:text-white rounded-md hover:bg-blue-600"
                   >
                     {isDarkMode ? "Light Mode" : "Dark Mode"}
                   </button>
