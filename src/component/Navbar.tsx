@@ -46,7 +46,7 @@ const Header: React.FC = () => {
   //   }, []);
 
   return (
-    <header className="sticky top-0 left-0 w-full flex items-center z-10 transition-colors bg-black">
+    <header className="sticky top-0 left-0 w-full flex items-center z-20 transition-colors bg-black">
       <div className="w-full">
         <div className="flex items-center justify-between relative">
           <div className="px-4">
