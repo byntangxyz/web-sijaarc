@@ -81,18 +81,10 @@ const Header: React.FC = () => {
               <ul className="block lg:flex">
                 <li className="group">
                   <a
-                    href="#home"
-                    className="text-base text-black lg:text-white py-2 mx-8 flex group-hover:text-blue-400"
-                  >
-                    Home
-                  </a>
-                </li>
-                <li className="group">
-                  <a
                     href="#main"
                     className="text-base text-black lg:text-white py-2 mx-8 flex group-hover:text-blue-400 dark text-black:lg:text-white"
                   >
-                    Class
+                    Home
                   </a>
                 </li>
                 <li className="group">
@@ -100,7 +92,7 @@ const Header: React.FC = () => {
                     href="#structure"
                     className="text-base text-black lg:text-white py-2 mx-8 flex group-hover:text-blue-400 dark text-black:lg:text-white"
                   >
-                    Structure
+                    Class
                   </a>
                 </li>
                 <li className="group">

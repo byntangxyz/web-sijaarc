@@ -5,9 +5,11 @@ const PhotoSlider: React.FC = () => {
   const [startX, setStartX] = useState(0);
 
   const images: string[] = [
-    "https://via.placeholder.com/600x400?text=Slide+1",
-    "https://via.placeholder.com/600x400?text=Slide+2",
-    "https://via.placeholder.com/600x400?text=Slide+3",
+    "/foto.jpg",
+    "/foto-2.jpg",
+    "/foto-1.jpeg",
+    "/foto-6.jpeg",
+    "/foto-4.jpeg",
   ];
 
   const totalSlides = images.length;
@@ -38,9 +40,9 @@ const PhotoSlider: React.FC = () => {
       {/* Tombol Panah Kiri */}
       <button
         onClick={prevSlide}
-        className="absolute left-0 top-1/2 transform -translate-y-1/2 bg-gray-600 text-white p-2 rounded-full z-10"
+        className="absolute left-0 top-1/2 transform -translate-y-1/2  text-white p-2 rounded-full z-10 "
       >
-        &larr;
+        <i className="ph ph-caret-left text-2xl"></i>
       </button>
 
       {/* Gambar Slide */}
@@ -55,7 +57,7 @@ const PhotoSlider: React.FC = () => {
             <img
               src={image}
               alt={`Slide ${index + 1}`}
-              className="w-full h-64 object-cover rounded-lg"
+              className="w-full h-full object-cover rounded-lg"
             />
           </div>
         ))}
@@ -64,9 +66,9 @@ const PhotoSlider: React.FC = () => {
       {/* Tombol Panah Kanan */}
       <button
         onClick={nextSlide}
-        className="absolute right-0 top-1/2 transform -translate-y-1/2 bg-gray-600 text-white p-2 rounded-full z-10"
+        className="absolute right-0 top-1/2 transform -translate-y-1/2 text-white rounded-full z-10 border-white"
       >
-        &rarr;
+        <i className="ph ph-caret-right text-2xl"></i>
       </button>
     </div>
   );

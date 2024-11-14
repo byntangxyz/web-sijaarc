@@ -15,11 +15,12 @@ function MainPages() {
   const [currentDaySchedule, setCurrentDaySchedule] = useState("");
 
   const schedules = [
-    "Senin:" + "Informatika - Bu Ratna | DDK 3 Pemro - Pak Eka | PPKN - Bu ",
+    "Senin:" +
+      "Informatika - Bu Ratna | DDK 3 Pemro - Pak Eka | PPKN - Bu Yohana",
     "Selasa: DDK 2 SISKOM - Bu Endah | DDK 1 JARKOM - Pak Yun",
     "Rabu: Olga - Mr. W | B. INDO - Bu Fani | B. JAWA - Pak Fajar | Senbud - Bu Mukti",
     "Kamis: MTK - Bu Hartitik | B. INGGRIS - Mrs. Rossi | Agama - Bu Fera | Sejarah - Bu Bakti",
-    "Jumat: IPAS - Bu | B. INGGRIS - Mrs. Rossi",
+    "Jumat: IPAS - Bu Yanti | B. INGGRIS - Mrs. Rossi",
   ];
 
   useEffect(() => {
@@ -36,14 +37,16 @@ function MainPages() {
       <Navbar />
       <div className="bg-gradient-to-b from-black via-slate-900 to-gray-950 overflow-hidden">
         <div className="bg-dots-pattern bg-repeat bg-opacity-10 min-h-screen">
-          <div className="pt-36 flex flex-col items-center" id="main">
+          <div className="pt-28 flex flex-col items-center" id="main">
             <div className="container mx-auto flex flex-col lg:flex-row gap-6 px-4">
               <div className="bg-white rounded-lg shadow-lg p-6 w-full lg:w-1/2 overflow-hidden box-border">
                 <h2 className="text-2xl font-bold mb-4">SIJA ARC STEMBAYO</h2>
                 <p className="mb-4">
-                  Gaza ganteng. Lorem ipsum dolor, sit amet consectetur
-                  adipisicing elit. Reprehenderit numquam facere quae molestiae
-                  impedit suscipit amet fugit dicta. Porro, pariatur!
+                  Halo Dunia! Kami adalah siswa-siswi SMKN 2 Depok Sleman
+                  jurusan Sistem Informasi Jaringan dan Aplikasi (SIJA) angkatan
+                  ke-28. Sebagai teman sekelas tentu kita sangat SoLId dan tidak
+                  jomok. Oiya kami sering juara loh, baik individu atau sekelas!
+                  Karena apa bang? SIJA lah
                 </p>
                 <FotoSlider />
               </div>
@@ -57,7 +60,7 @@ function MainPages() {
                     <p className="mb-4">
                       Jadwal pelajaran kelas X SIJA A Semester 1 2024/2025.
                     </p>
-                    <div className="text-gray-700 dark:text-gray-300">
+                    <div className="text-gray-700">
                       <p>{currentDaySchedule}</p>
                     </div>
                   </div>
@@ -76,7 +79,7 @@ function MainPages() {
                       >
                         Bintang Maulana
                       </a>{" "}
-                      atas dasar gabut.
+                      dan Isa Silva Putra atas dasar gabut.
                     </p>
                     <ul className="space-y-2">
                       <li>
@@ -86,7 +89,7 @@ function MainPages() {
                           rel="noopener noreferrer"
                           className="text-blue-500 dark:text-blue-400"
                         >
-                          Instagram
+                          <i className="ph ph-instagram-logo"></i> Instagram kelas
                         </a>
                       </li>
                     </ul>
