@@ -4,6 +4,9 @@ dibuat oleh tim handal koding sija a. terimakasih kepada teman2 yang berkontribu
 
 
 Bahasa Pemro: TypeScript 
+
 Library: React
+
 HMR: Vite
+
 Deployment: Vercel
